@@ -22,6 +22,8 @@ public class DodeskaController extends JsonController {
                 result.put("result","true");
                 result.put("url", joshi.getKey().getName());
                 result.put("kawaii", joshi.getKawaii());
+                result.put("name", Utils.valueString(joshi.getName()));
+                result.put("category", Utils.valueString(joshi.getCategory()));
                 return result;
             }
         }

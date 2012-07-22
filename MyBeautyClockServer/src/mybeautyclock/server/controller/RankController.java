@@ -41,8 +41,8 @@ public class RankController extends JsonController {
             Map<String, Object> map = new HashMap<String, Object>();
             map.put("url", joshi.getKey().getName());
             map.put("ranking", ranking);
-            map.put("name", joshi.getName());
-            map.put("category", joshi.getCategory());
+            map.put("name", Utils.valueString(joshi.getName()));
+            map.put("category", Utils.valueString(joshi.getCategory()));
             map.put("kawaii", joshi.getKawaii());
             JSONObject jsonobj = new JSONObject(map);
             jsonlist.add(jsonobj);

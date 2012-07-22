@@ -16,4 +16,11 @@ public class Utils {
         }
         return defaultvalue;
     }
+    
+    public static String valueString(String s){
+        if(s!=null){
+            return s;
+        }
+        return "";
+    }
 }
